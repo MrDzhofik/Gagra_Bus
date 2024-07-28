@@ -1,0 +1,22 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<a href="/"> Назад </a>
+<h2> Маршрут {{route.number}} - {{ route.name }}</h2>
+<ul>
+    {% for item in stops_and_times %}
+    <li>
+        {{ item.stop_name }}<br>
+        <ul>
+            <li>
+                {% for time in item.times %}
+                <span>{{ time|time:"H:i" }}</span>
+                {% endfor %}
+            </li>
+        </ul>
+    </li>
+    {% endfor %}
+</ul>
+
+{% endblock content %}

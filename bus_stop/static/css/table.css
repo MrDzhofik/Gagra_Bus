@@ -1,0 +1,13 @@
+.table_row:hover {
+    background-color: cornflowerblue;
+    cursor: pointer;
+}
+
+.table_row {
+    height: 30px;
+}
+
+td {
+    font-size: 16px;
+    font-weight: 400;
+}

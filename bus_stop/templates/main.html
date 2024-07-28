@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gagra Bus</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/table.css' %}">
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+</head>
+
+<body>
+
+    {% include "navbar.html" %}
+
+    <h1 class="title">Гагра</h1>
+
+
+    <div class="container mt-5">
+
+        {% block content %}
+
+        {% endblock %}
+
+
+
+    </div>
+
+</body>
+
+<script src="{% static 'js/add_link.js' %}"></script>
+
+</html>

@@ -1,0 +1,28 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<table class="dynamic-table">
+    <thead>
+        <tr>
+            <th>Маршрут</th>
+            <th>Остановки</th>
+            <th>График работы</th>
+            <th>Интервал</th>
+        </tr>
+    </thead>
+    <tbody>
+
+
+    </tbody>
+
+    {% for route in routes %}
+    <tr class="table_row" data-href="{% url 'route' route.id %}">
+        <td> {{ route.number }}</td>
+        <td> {{ route.name }}</td>
+        <td> 8:00-18:00 </td>
+        <td> По расписанию </td>
+    </tr>
+    {% endfor %}
+
+    {% endblock content %}

@@ -1,0 +1,47 @@
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 45%;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    height: 85px;
+    background-color: #FFFFE0;
+}
+
+.image {
+    width: 300px;
+}
+
+.official {
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 700;
+    height: 100%;
+    padding: 10px;
+}
+
+.official:hover {
+    color: #000000;
+}
+
+.link {
+    height: 85px;
+    width: 100px;
+    align-content: center;
+}
+
+.link:hover {
+    background-color: darkkhaki;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
