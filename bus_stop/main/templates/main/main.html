@@ -8,7 +8,6 @@
             <th>Маршрут</th>
             <th>Остановки</th>
             <th>График работы</th>
-            <th>Интервал</th>
         </tr>
     </thead>
     <tbody>
@@ -20,8 +19,7 @@
     <tr class="table_row" data-href="{% url 'route' route.id %}">
         <td> {{ route.number }}</td>
         <td> {{ route.name }}</td>
-        <td> 8:00-18:00 </td>
-        <td> По расписанию </td>
+        <td> 7:10-19:30 </td>
     </tr>
     {% endfor %}
 

@@ -2,21 +2,20 @@
 
 {% block content %}
 
-<a href="/"> Назад </a>
+<a href="/" class="btn btn-link btn-outline-warning"> К маршрутам </a>
 <h2> Маршрут {{route.number}} - {{ route.name }}</h2>
-<ul>
+<ol class="list-group list-group-numbered">
     {% for item in stops_and_times %}
-    <li>
+    <li class="list-group-item">
+        <!-- <input class="form-check-input me-1" type="checkbox" value="" aria-label="..."> -->
         {{ item.stop_name }}<br>
         <ul>
-            <li>
-                {% for time in item.times %}
-                <span>{{ time|time:"H:i" }}</span>
-                {% endfor %}
-            </li>
+            {% for time in item.times %}
+            <span>{{ time|time:"H:i" }}</span>
+            {% endfor %}
         </ul>
     </li>
     {% endfor %}
-</ul>
+</ol>
 
 {% endblock content %}
