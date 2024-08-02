@@ -4,10 +4,10 @@
 
 <a href="/" class="btn btn-link btn-outline-warning"> К маршрутам </a>
 <h2> Маршрут {{route.number}} - {{ route.name }}</h2>
+<h5> Время отправления Московское!</h5>
 <ol class="list-group list-group-numbered">
     {% for item in stops_and_times %}
     <li class="list-group-item">
-        <!-- <input class="form-check-input me-1" type="checkbox" value="" aria-label="..."> -->
         {{ item.stop_name }}<br>
         <ul>
             {% for time in item.times %}
